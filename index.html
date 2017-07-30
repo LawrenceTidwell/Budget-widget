@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Budget Widget</title>
+
+    <!-- css -->
+    <link href="../styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="card">
+      <div  class="header">
+        <h1 class="headerText">Monthly Budget</h1>
+      </div>
+      <form name="budgetForm">
+        <div class="inputs">
+          <h4><i class="fa fa-home" aria-hidden="true"></i> <span class="rightText">Rent/Mortgage</span></h3>
+          <input type="text" name="rent" placeholder="0" value=""/>
+          <h4><i class="fa fa-car" aria-hidden="true"></i> Car Payment</h3>
+          <input type="text" name="car" placeholder="0" value=""/>
+          <h4><i class="fa fa-phone" aria-hidden="true"></i> Cell Phone</h3>
+          <input type="text" name="phone" placeholder="0" value=""/>
+          <h4><i class="fa fa-cutlery" aria-hidden="true"></i> Food/Gas</h3>
+          <input type="text" name="foodGas" placeholder="0" value=""/>
+          <h4><i class="fa fa-plus" aria-hidden="true"></i> Other</h3>
+          <input type="text" name="other" placeholder="0" value=""/>
+          <h4><i class="fa fa-arrow-right" aria-hidden="true"></i> Amount for Monthly<br><span style="padding-left: 19px;">Bills Per Week</span></h3>
+          <input type="text" id="answer" name="Result" placeholder="$0.00" value="" readonly/>
+          <h4><i class="fa fa-arrow-right" aria-hidden="true"></i> Monthly Expenses</h3>
+          <input type="text" id="answer2" name="Result" placeholder="$0.00" value="" readonly/>
+        </div>
+        <div class="text-center">
+          <input class="btn btn-primary btn-width" type="button" name="button" value="Submit" onClick="total()"/>
+          <input class="btn btn-success btn-width" type="reset" value="Reset"/>
+        </div>
+      </form>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
